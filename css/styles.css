@@ -30,6 +30,7 @@ ul {
     padding: 0%;
     margin: 0;
 }
+
 .navig {
     display: flex;
     margin: 0px;
@@ -90,6 +91,8 @@ ul {
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
     flex-shrink: 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .top-line {
@@ -309,6 +312,8 @@ img {
 .lastpart {
     background-color: var(--dark-blue);
     padding: 100px 0;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .description {
@@ -415,14 +420,6 @@ img {
     gap: 24px;
 }
 
-.last-element {
-
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
 .first-name {
     padding: 32px 0;
@@ -529,6 +526,8 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .btn-all:hover {

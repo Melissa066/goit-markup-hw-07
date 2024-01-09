@@ -5,6 +5,7 @@
 }
 
 
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -88,7 +89,6 @@ ul {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);
-    width: 1440px;
     flex-shrink: 0;
 }
 
@@ -116,7 +116,7 @@ img {
 
 .container {
 
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -219,7 +219,6 @@ img {
     color: var(--dark-blue);
     background-color: var(--dark-blue);
     padding: 188px 0;
-    width: 1440px;
     height: 600px;
     flex-shrink: 0;
     align-items: center;
@@ -520,13 +519,13 @@ img {
 }
 
 .last-element {
-    width: 100%;
+    max-width: 100%;
     min-width: 264px;
 }
 
 .heroi {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img15.jpg);
-    max-width: 1440px;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

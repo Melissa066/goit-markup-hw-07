@@ -18,23 +18,26 @@
       rel="stylesheet"
     />
 
-    <integrity
-      ="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="project">
     <header class="top-head">
-      <!-- LOGO -->
       <div class="topdiv container">
+        <!-- LOGO -->
         <nav class="navig">
           <a class="logo link first-logo" href="./index.html">
             Web<span class="logo-studio-dark">Studio</span>
           </a>
-
-          <ul class="list top-line">
+          <ul class="list top-line links-navigation">
             <li>
               <a class="index link top cls-link abs-link" href="./index.html"
                 >Studio</a
@@ -48,6 +51,7 @@
             <li><a class="index link top cls-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
         <address class="add">
           <ul class="list top-line">
             <li>
@@ -65,7 +69,13 @@
           </ul>
         </address>
       </div>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
+
     <main>
       <!-- Effective Solutions for Your Business -->
 
@@ -431,7 +441,7 @@
             </li>
           </ul>
         </div>
-        <div class="form-div">
+        <div class="form-div subscribe-section">
           <p class="sbsc">Subscribe</p>
           <form
             class="subs-class"

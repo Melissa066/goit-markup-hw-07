@@ -30,25 +30,25 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="project">
-    <header class="top-head">
+    <header class="header">
       <div class="topdiv container">
         <!-- LOGO -->
         <nav class="navig">
           <a class="logo link first-logo" href="./index.html">
             Web<span class="logo-studio-dark">Studio</span>
           </a>
-          <ul class="list top-line links-navigation">
+          <ul class="list top-line">
             <li>
-              <a class="index link top cls-link abs-link" href="./index.html"
+              <a class="index link cls-link abs-link" href="./index.html"
                 >Studio</a
               >
             </li>
             <li>
-              <a class="index link top cls-link" href="./portfolio.html"
+              <a class="index link cls-link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
-            <li><a class="index link top cls-link" href="">Contacts</a></li>
+            <li><a class="index link cls-link" href="">Contacts</a></li>
           </ul>
         </nav>
 
@@ -68,12 +68,98 @@
             </li>
           </ul>
         </address>
+        <button
+          class="btn-mobile-nav js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        </button>
       </div>
 
-      <button class="btn-mobile-nav">
-        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-      </button>
+      <div class="navigation js-menu-container" id="mobile-menu">
+        <button class="close-btn js-close-menu">
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+        <nav class="main-nav">
+          <ul class="nav-list list">
+            <li>
+              <a class="mobile-menu-nav-link link" href="./index.html" title=""
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a
+                class="mobile-menu-nav-link link"
+                href="./portfolio.html"
+                title=""
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="mobile-menu-nav-link mobile-menu-nav-link-active link"
+                href="#"
+                title=""
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="address-container">
+          <address class="mobile-menu-address">
+            <ul class="address-list list">
+              <li>
+                <a
+                  class="mobile-menu-address-link link mobile-tel-link"
+                  href="tel:+110001111111"
+                  title=""
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mobile-menu-address-link link"
+                  href="mailto:info@devstudio.com"
+                  title=""
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-list list">
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -547,12 +633,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="/mobile.js/mobile-menu.js"></script>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

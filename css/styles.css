@@ -1797,6 +1797,56 @@ a:focus use {
 
         }
 
+
+                @media screen and (max-width: 1158px) {
+
+
+                    .section-five-list {
+
+                        width: 168px;
+                            height: 88px;
+                            
+                    }
+
+                    .custom-class {
+
+                        padding-bottom: 20px;
+                    }
+
+                    .footer-div-logo {
+
+                        margin-left: 50px;;
+                    }
+
+                    .last-description {
+
+                        color: var(--CLOUD, #F4F4FD);
+                        
+                            /* Body */
+                            font-family: Roboto;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            /* 150% */
+                            letter-spacing: 0.32px;
+                            width: 264px;
+                    }
+
+                    .container {
+
+                        overflow-x: hidden;
+                    }
+
+                    .form-div {
+
+                        margin-left: 40px;
+                    }
+
+
+
+                }
+
              /* .top-line {
 
                 display: inline-flex;

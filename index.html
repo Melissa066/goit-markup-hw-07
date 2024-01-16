@@ -471,7 +471,7 @@
     <!-- FOOTER SECTION -->
     <footer class="lastpart">
       <div class="foot-div container">
-        <div class="footer-div-logo">
+        <div class="footer-div-logo" id="myLogoDiv">
           <a class="logo link logo-st" href="./index.html">
             Web<span class="logoc">Studio</span>
           </a>
@@ -517,20 +517,21 @@
             </li>
           </ul>
         </div>
-        <div class="form-div subscribe-section">
-          <p class="sbsc subscribe-text">Subscribe</p>
+        <div class="form-div subscribe-section" id="mysubscribe">
+          <p class="sbsc subscribe-text tablet--size">Subscribe</p>
           <form
             class="subs-class"
             name="signup_form"
             autocomplete="on"
             novalidate
           >
-            <label class="lbl">
+            <label class="lbl lbl-class">
               <input
                 type="email"
                 name="email"
                 class="placeh"
                 placeholder="E-mail"
+                id="myPH"
               />
             </label>
             <button type="submit" class="btn-subscribe">

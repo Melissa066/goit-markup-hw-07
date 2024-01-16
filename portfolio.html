@@ -14,11 +14,22 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/portfolio.css" />
   </head>
 
   <body class="project">
-    <header class="header">
+    <header class="header portfolio--header">
       <!-- LOGO -->
       <div class="topdiv container">
         <nav class="navig">
@@ -56,6 +67,83 @@
             </li>
           </ul>
         </address>
+        <button
+          class="btn-mobile-nav js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        </button>
+      </div>
+
+      <div class="navigation js-menu-container" id="mobile-menu">
+        <button class="close-btn js-close-menu">
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+        <nav class="main-nav">
+          <ul class="nav-list list">
+            <li>
+              <a class="studio-link link" href="./index.html" title=""
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a class="nav--link link" href="./portfolio.html" title=""
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="nav--link link" href="#" title="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="address-container">
+          <address class="mobile-menu-address">
+            <ul class="address-list list">
+              <li>
+                <a class="number" href="tel:+110001111111" title=""
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="e-mail" href="mailto:info@devstudio.com" title=""
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social-list list">
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="insta">
+              <a href="" class="instagr">
+                <svg width="16" height="16" class="firstred">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -64,28 +152,32 @@
       <section class="section portf-section">
         <div class="container">
           <h1 class="visually-hidden">EXPLORE US</h1>
-          <ul class="list main-list">
-            <li>
-              <button class="firstbtn main-btn btn-all btn-menu" type="button">
+          <ul class="list main-list mobile--list">
+            <li class="main-elements">
+              <button
+                id="myBtn"
+                class="firstbtn main-btn btn-all btn-menu main--first--btn"
+                type="button"
+              >
                 All
               </button>
             </li>
-            <li>
+            <li class="main-elements">
               <button class="firstbtn main-btn btn-all btn-menu" type="button">
                 Web Site
               </button>
             </li>
-            <li>
+            <li class="main-elements">
               <button class="firstbtn main-btn btn-all btn-menu" type="button">
                 App
               </button>
             </li>
-            <li>
+            <li class="main-elements">
               <button class="firstbtn main-btn btn-all btn-menu" type="button">
                 Design
               </button>
             </li>
-            <li>
+            <li class="main-elements">
               <button class="firstbtn main-btn btn-all btn-menu" type="button">
                 Marketing
               </button>
@@ -94,8 +186,8 @@
 
           <!-- ROW1 -->
 
-          <ul class="list card-list">
-            <li class="card-element">
+          <ul class="list card-list row--list cards--list">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img
@@ -110,14 +202,16 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
                     Banking App Interface Concept
                   </h2>
-                  <p class="firsttitle">App</p>
+                  <p class="firsttitle small--title">App</p>
                 </div>
               </a>
             </li>
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img src="./images/img5.jpg" alt="Payment" width="360" />
@@ -128,12 +222,16 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">Cashless Payment</h2>
-                  <p class="firsttitle">Marketing</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Cashless Payment
+                  </h2>
+                  <p class="firsttitle small-title">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img src="./images/img6.jpg" alt="App" width="360" />
@@ -144,15 +242,19 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">Meditation App</h2>
-                  <p class="firsttitle">App</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Meditation App
+                  </h2>
+                  <p class="firsttitle small-title">App</p>
                 </div>
               </a>
             </li>
 
             <!-- ROW2 -->
 
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img src="./images/img7.jpg" alt="Taxi" width="360" />
@@ -163,12 +265,16 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">Taxi Service</h2>
-                  <p class="firsttitle">Marketing</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Taxi Service
+                  </h2>
+                  <p class="firsttitle small-title">Marketing</p>
                 </div>
               </a>
             </li>
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img src="./images/img9.jpg" alt="Phone Screen" width="360" />
@@ -179,12 +285,16 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">Screen Illustrations</h2>
-                  <p class="firsttitle">Design</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Screen Illustrations
+                  </h2>
+                  <p class="firsttitle small-title">Design</p>
                 </div>
               </a>
             </li>
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img
@@ -200,15 +310,19 @@
                 </div>
 
                 <div class="app">
-                  <h2 class="titlefour card-title">Online Courses</h2>
-                  <p class="firsttitle">Marketing</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Online Courses
+                  </h2>
+                  <p class="firsttitle small-title">Marketing</p>
                 </div>
               </a>
             </li>
 
             <!-- ROW3 -->
 
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img
@@ -223,14 +337,16 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
                     Instagram Stories Concept
                   </h2>
-                  <p class="firsttitle">Design</p>
+                  <p class="firsttitle small-title">Design</p>
                 </div>
               </a>
             </li>
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img
@@ -245,12 +361,16 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">Organic Food</h2>
-                  <p class="firsttitle">Web Site</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Organic Food
+                  </h2>
+                  <p class="firsttitle small-title">Web Site</p>
                 </div>
               </a>
             </li>
-            <li class="card-element">
+            <li class="card-element row--element portfolio--element">
               <a href="" class="link portf-link">
                 <div class="card-container">
                   <img src="./images/img13.jpg" alt="Coffee" width="360" />
@@ -261,8 +381,12 @@
                   </p>
                 </div>
                 <div class="app">
-                  <h2 class="titlefour card-title">Fresh Coffee</h2>
-                  <p class="firsttitle">Web Site</p>
+                  <h2
+                    class="titlefour card-title interface--concept second-title-card"
+                  >
+                    Fresh Coffee
+                  </h2>
+                  <p class="firsttitle small-title">Web Site</p>
                 </div>
               </a>
             </li>
@@ -273,7 +397,7 @@
 
     <footer class="lastpart">
       <div class="foot-div container">
-        <div class="footer-div-logo">
+        <div class="footer-div-logo" id="myLogoDiv">
           <a class="logo link logo-st" href="./index.html">
             Web<span class="logoc">Studio</span>
           </a>
@@ -319,20 +443,21 @@
             </li>
           </ul>
         </div>
-        <div class="form-div subscribe-section">
-          <p class="sbsc">Subscribe</p>
+        <div class="form-div subscribe-section" id="mysubscribe">
+          <p class="sbsc subscribe-text tablet--size">Subscribe</p>
           <form
             class="subs-class"
             name="signup_form"
             autocomplete="on"
             novalidate
           >
-            <label class="lbl">
+            <label class="lbl lbl-class">
               <input
                 type="email"
                 name="email"
                 class="placeh"
                 placeholder="E-mail"
+                id="myPH"
               />
             </label>
             <button type="submit" class="btn-subscribe">
@@ -345,5 +470,12 @@
         </div>
       </div>
     </footer>
+    <script defer src="./mobile.js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

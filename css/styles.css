@@ -935,7 +935,7 @@ img {
 
 .placeh {
 
-    width: 264px;
+    width: 100%;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: #ffffff;
@@ -1003,6 +1003,7 @@ img {
     color: var(--link-color);
     display: block;
     margin-bottom: 4px;
+    width: 350px;
 }
 
 .icn {
@@ -1441,7 +1442,7 @@ a:focus use {
 
                 .logo-st {
 
-                    margin-left: 70px;
+                    margin-left: 50px;
                 }
 
                 .scp {
@@ -1456,10 +1457,12 @@ a:focus use {
                     flex-wrap: wrap;
                 } 
 
-                .sbsc {
+                .subscribe-text {
 
-                    margin-top: 50px;
-                    margin-left: 140px;
+                    /* margin-top: 50px;
+                    margin-left: 140px; */
+
+                    text-align: center;
                 }
 
                 .subscribe-section {
@@ -1467,10 +1470,15 @@ a:focus use {
                     margin: 0;
                 }
 
-                .placeh {
+                .form-div {
+
+                    margin-right: 100px;
+                }
+
+                /* .placeh {
 
                     width: 400px;
-                }
+                } */
 
                 .btn-subscribe {
 
@@ -1750,11 +1758,11 @@ a:focus use {
                         .list-cust {
 
                             display: flex;
-                                width: 768px;
+                                /* width: 768px; */
                                 padding-top: 72px;
                                 align-items: center;
-                                gap: 96px;
-                                flex-wrap: wrap;
+                                /* /* gap: 96px; */
+                                flex-wrap: wrap; 
                         }
 
                         .section-five-list {
@@ -1772,20 +1780,20 @@ a:focus use {
                         .foot-div {
 
                             flex-wrap: wrap;
-                            display: flex;
+                            /* display: flex; */
                                 justify-content: center;
                         }
 
                         .form-div {
 
-                            margin-right: 240px;
+                            /* margin-right: 240px; */
                             padding-top: 80px;
                         }
 
-                        .btn-subscribe {
+                        /* .btn-subscribe {
 
                             margin-left: 50px;
-                        }
+                        } */
 
                          /* .footer-div-logo {
 
